@@ -57,7 +57,7 @@ public class SecurityConfiguration {
                 .disable()
                 .headers().frameOptions().disable()
                 .and()
-                .httpBasic(Customizer.withDefaults()) // basic - добавляется заголок
+                .httpBasic(Customizer.withDefaults()) // basic - добавляется заголовок
                 .logout() // /logout
                 .invalidateHttpSession(true)// при логауте удаляется сессия
                 .deleteCookies("JSESSIONID") // и куки
